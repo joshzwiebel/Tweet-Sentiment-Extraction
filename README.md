@@ -25,7 +25,7 @@ The data being processed was as follows (it can be found within the repository f
 They keyword and location of the tweet had the potential to be blank. The training data contained approx ~27000 samples and more detail into the composition of the data can be found within the exploration folder.
 
 # Preprocessing
-
+A couple of different strategies were taken during the preprocessing phase. Cleaning of the data was important. This step involved stripping punctuation and and suffixes from words. As the data came from tweets many of the words were mispelled. We employed pyspellchecker in order to spellcheck all of the tweets simultaneously. The computation was lengthy but completed after running overnight. We then had to employ feature engineering. We knew that because the selected text was taken right from the original tweet it would be a good idea to instead predict the indices of the words that would be usued for the selected text as opposed to predicting the words themselves
 
 
 # Models
